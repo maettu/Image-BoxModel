@@ -605,7 +605,6 @@ sub DrawTicks{
 	}
 	else{
 		for my $c (0 .. scalar(@{$p{array}})-1){
-            $c++;
             next unless $c % $p{skip} == 0;
 			my $x = where_between (
 				pos_min => $image->{$p{box_to_measure_from}}{left}  + $p{box_border},
